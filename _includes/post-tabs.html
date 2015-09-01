@@ -1,0 +1,34 @@
+<!-- start post-tabs.html include -->
+<div class="row">
+	<div class="large-12 columns">
+		<div class="content" id="all">
+			<h5 class="recent-post-header">Recent Posts</h5>
+			{% for post in site.posts %}
+
+				{% if forloop.first %}
+					{%  continue %}
+				{%  endif %}
+
+				<div class="row">
+
+					<div class="large-12 columns">
+						<p><a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></p>
+						<div class="recent-post-excerpt">
+							<p class="text-justify">{{ post.excerpt | truncatewords: 20 }}<br><span class="post-meta text-right">{{ post.date | date: "%Y.%m.%d" }}</span></p>
+						</div>
+					</div>
+				</div>
+
+				{% if forloop.index > 4 %}
+					{%  break %}
+				{%  endif %}
+
+				{% if forloop.index > 1 %}  <!-- this is just a hack for now -->
+					<hr>
+				{%  endif %}
+
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end post-tabs.html include -->

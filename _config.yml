@@ -1,0 +1,68 @@
+# Site settings
+title: Cross Rinne Journals
+subtitle: Thoughts on Anime and Manga
+email: dodzidenu.dzakuma@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+timezone: America/Chicago
+url: "http://www.crossrinnejournals.com" # the base hostname & protocol for your site
+twitter_username: crossrinnejournals
+github_username: crossrinnejournals
+highlighter: pygments
+permalink: /blog/:author/:title/
+future: false #don't post post that were made with a future date
+revision_number: 0.0.0
+
+#exclusions
+exclude: [mockups, workspaces]
+
+# Build settings
+markdown: kramdown
+
+# styles
+main_stylesheet: stylesheets/main.css
+
+#available javascript files
+livejs: <script type="text/javascript" src="javascripts/live.js"></script>
+
+#jquery related
+jquery: javascripts/vendor/jquery.js
+
+#vendor (included with foundation)
+fastclick: javascripts/vendor/fastclick.js
+jquery_cookie: javascripts/vendor/jquery.cookie.js
+modernizr: javascripts/vendor/modernizr.js
+placeholder: javascripts/vendor/placeholder.js
+
+#foundation related
+foundation_initialization_script: <script>$(document).foundation();</script>
+foundation: javascripts/foundation.js
+foundation_minimized: javascripts/foundation.min.js
+foundation_abide: javascripts/foundation/foundation.abide.js
+foundation_accordion: javascripts/foundation/foundation.accordion.js
+foundation_alert: javascripts/foundation/foundation.alert.js
+foundation_clearing: javascripts/foundation/foundation.clearing.js
+foundation_dropdown: javascripts/foundation/foundation.dropdown.js
+foundation_equalizer: javascripts/foundation/foundation.equalizer.js
+foundation_foundation: javascripts/foundation/foundation.js
+foundation_interchange: javascripts/foundation/foundation.interchange.js
+foundation_joyride: javascripts/foundation/foundation.joyride.js
+foundation_magellan: javascripts/foundation/foundation.magellan.js
+foundation_offcanvas: javascripts/foundation/foundation.offcanvas.js
+foundation_orbit: javascripts/foundation/foundation.orbit.js
+foundation_reveal: javascripts/foundation/foundation.reveal.js
+foundation_slider: javascripts/foundation/foundation.slider.js
+foundation_tab: javascripts/foundation/foundation.tab.js
+foundation_tooltip: javascripts/foundation/foundation.tooltip.js
+foundation_topbar: javascripts/foundation/foundation.topbar.js
+
+#cdn resources
+angularjs_cdn: https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js
+d3js_cdn: https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js
+highlight_initialization_script: <script>hljs.initHighlighting();</script>
+highlight_cdn: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js
+jquery_cdn: https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
+font_awesome_cdn: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css

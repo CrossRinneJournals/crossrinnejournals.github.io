@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+
+	<body>
+
+		{% include header.html %}
+
+		{% unless page.title %}
+			{% assign page = site.posts[0] %}
+		{% endunless %}
+
+		<div class="blog-wrapper">
+			
+			<div class="row">
+
+				<div class="large-8 columns">
+
+					<div class="row">
+						<div class="large-12 columns">
+							<h3 class="post-title text-justify">{{ page.title }}</h3>
+							<h4 class="post-subtitle text-right">~ {{ page.subtitle }} ~</h4>
+							<div class="text-justify">{{ page.content }}</div>
+							<p>Word Count: {{ page.content | split: " " | size }}</p>
+						</div>
+
+						<div class="large-12 columns">
+							<h1><small>Join the kaleidoscope</small></h1>
+							<p>{{ page.comment_promt }}</p>
+							{% include disqus.html %}
+						</div>
+					</div>
+				</div>
+
+				<div class="large-4 columns">
+					{% include post-tabs.html %}
+				</div>
+			</div>
+
+		</div>		
+
+		{% include footer.html %}
+
+		{% include google-analytics.html %}
+
+		<script type="text/javascript" src="{{ site.jquery_cdn }}"></script>
+		<script type="text/javascript" src="/{{ site.foundation_minimized }}"></script>
+		<script type="text/javascript" src="/{{ site.foundation_dropdown }}"></script>
+		<script type="text/javascript" src="/{{ site.foundation_interchange }}"></script>
+		<script type="text/javascript" src="/{{ site.foundation_tab }}"></script>
+		{{ site.foundation_initialization_script }}
+		
+		<script type="text/javascript" src="{{ site.highlight_cdn }}"></script>
+		{{ site.highlight_initialization_script }}
+
+	</body>
+
+</html>
