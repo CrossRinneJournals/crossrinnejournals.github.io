@@ -1,23 +1,13 @@
 ---
 layout: default
 ---
+{% for author in site.data.authors %}
 
-<div class="line1-wrapper" style="background: orange;">
-	<div class="row" style="background: green;">
+	<div class="row">
+
 		<div class="large-12 columns">
-			<img data-interchange="[http://placekitten.com/800/600, (default)], [http://placekitten.com/1024/786, (large)]" alt="this is a cat">
+			<p>{{ author.name }}</p>
 		</div>
 	</div>
-</div>
 
-<div class="line2-wrapper" style="background: blue;">
-	<div class="row" style="background: red;">
-		<div class="large-12 columns"><p>yes</p>&nbsp;</div>
-	</div>
-</div>
-
-<div class="line3-wrapper" style="background: yellow;">
-	<div class="row" style="background: pink;">
-		<div class="large-12 columns"><p>yes</p>&nbsp;</div>
-	</div>
-</div>
+{% endfor %}
