@@ -1,7 +1,8 @@
-- name: "Dodzi Dzakuma"
- twitter: "nexocentric"
- zodiac_sign: "scorpio"
+authors:
+ - name: "Dodzi Dzakuma"
+  twitter: "nexocentric"
+  zodiac_sign: "scorpio"
 
-- name: "Ken Iikura-Gross"
- twitter: "iikurak"
- zodiac_sign: "unknown"
+ - name: "Ken Iikura-Gross"
+  twitter: "iikurak"
+  zodiac_sign: "unknown"
