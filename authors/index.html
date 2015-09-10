@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-{% for author in site.data.authors %}
+<!-- {% for author in site.data.authors %} -->
 
 	<div class="row">
 
 		<div class="large-12 columns">
-			<p>{{ author.name }}</p>
-			<p>{{ author.twitter }}</p>
-			<p>{{ author.zodiac_sign }}</p>
+			<p>{{ site.data.authors["dodzi"].name }}</p>
+			<p>{{ site.data.authors["dodzi"].twitter }}</p>
+			<p>{{ site.data.authors["dodzi"].zodiac_sign }}</p>
 		</div>
 	</div>
 
-{% endfor %}
+<!-- {% endfor %} -->
