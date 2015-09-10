@@ -1,2 +1,8 @@
- - name: "dodzi"
- - name: "ken"
+dodzi:
+ name: "Dodzi Dzakuma"
+ twitter: "something"
+ zodiac_sign: "a sign"
+ken:
+ name: "Ken Iikura-Gross"
+ twitter: "something"
+ zodiac_sign: "a sign"
