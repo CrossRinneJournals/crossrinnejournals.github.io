@@ -2,7 +2,8 @@
 	"dodzi" : {
 		"name" : "Dodzi Dzakuma",
 		"twitter" : "something",
-		"zodiac_sign" : "a sign"
+		"zodiac_sign" : "a sign",
+		"another_value" : "yes"
 	},
 	"ken" : {
 		"name" : "Ken Iikura-Gross",
